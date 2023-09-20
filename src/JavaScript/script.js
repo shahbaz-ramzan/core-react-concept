@@ -87,3 +87,21 @@ console.log("join", join);
 let stringofArray = ["m", "shahbaz", "ramzan"];
 let convertArraystring = stringofArray.join();
 console.log(convertArraystring);
+// Slice method is usefull for for sub array that return specific part of array and cannot modify the original array
+let slice = array.slice(0, 5);
+console.log("slice", slice);
+// splice method is used remove specific elements from the array and return removed element also modified the original array we can also modifed in the original array with new element on the specific location
+
+let remove = array.splice(0, 3);
+console.log("remove", remove);
+console.log("original array", array);
+// add element in the array with splice
+
+array.splice(0, 3, 9, 9, 9);
+console.log("splice to add element ", array);
+// forEach iterate on all element  in the array and can not retun new array
+
+array.forEach((e) => console.log(e));
+// map iterate on all element in the array and return a new array
+let mapArray = array.map((e) => e + 5);
+console.log("map array and add 5:", mapArray);
