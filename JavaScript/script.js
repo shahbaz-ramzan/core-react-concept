@@ -105,3 +105,4 @@ array.forEach((e) => console.log(e));
 // map iterate on all element in the array and return a new array
 let mapArray = array.map((e) => e + 5);
 console.log("map array and add 5:", mapArray);
+//
